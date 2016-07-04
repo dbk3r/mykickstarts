@@ -24,7 +24,7 @@ services --enabled=postfix,network,ntpd,ntpdate,sshd,libvirtd
 reboot
 
 network --device=eth0 --onboot=yes --activate 
-network --device=br0 --onboot=yes --bridgeslaves=eth0 --ip=192.168.151.55 --netmask=255.255.255.0 --gateway=192.168.151.1 --nameserver=192.168.169.10 --bootproto=static --hostname=sp-tpskvm02.rbb-online.de
+network --device=br0 --onboot=yes --bridgeslaves=eth0 --ip=192.168.222.41 --netmask=255.255.255.0 --gateway=192.168.222.1 --nameserver=192.168.169.10 --bootproto=static --hostname=sp-tpskvm02.rbb-online.de
 
 %packages --nobase
 -biosdevname
