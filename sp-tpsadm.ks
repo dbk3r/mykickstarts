@@ -23,7 +23,7 @@ services --enabled=postfix,network,ntpd,ntpdate,sshd,libvirtd
 
 reboot
 
-network --device=eth0 --onboot=yes --activate --ip=192.168.222.44 --netmask=255.255.255.0 --gateway=192.168.222.1 --nameserver=192.168.169.10 --bootproto=static --hostname=sp-tpsadm.rbb-online.de
+network --device=eth0 --onboot=yes --activate --ip=192.168.222.44 --netmask=255.255.255.0 --gateway=192.168.222.1 --nameserver=192.168.169.10 --bootproto=static --hostname=sp-tpsadm.ad.rbb-online.de
 
 %packages --nobase
 -biosdevname
@@ -41,16 +41,13 @@ ntp
 ntpdate
 rsync
 which
+git
+samba-client
+curl
+perl
+python
 wget
 net-tools
-libvirt
-virt-install
-virt-top
-virt-what
-virt-who
-qemu-kvm
-qemu-kvm-common
-qemu-kvm-tools
 %end
 
 %post

@@ -23,7 +23,7 @@ services --enabled=postfix,network,ntpd,ntpdate,sshd,libvirtd
 
 reboot
 
-network --device=eth0 --onboot=yes --activate --ip=192.168.222.43 --netmask=255.255.255.0 --gateway=192.168.222.1 --nameserver=192.168.169.10 --bootproto=static --hostname=sp-tpsdock02.rbb-online.de
+network --device=eth0 --onboot=yes --activate --ip=192.168.222.43 --netmask=255.255.255.0 --gateway=192.168.222.1 --nameserver=192.168.169.10 --bootproto=static --hostname=sp-tpsdock02.ad.rbb-online.de
 
 %packages --nobase
 -biosdevname
